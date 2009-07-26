@@ -1,4 +1,8 @@
 {% extends pack.template_base.template %}
+{% block head %}
+	{{ block.super }}
+	{{pack.css.render}}
+{% endblock %}
 {% block content %}
 <div class="span-24 main_banner">
 	<p>Welcome to my new portfolio page. Check out my work in the gallery page and recent work.</p>
