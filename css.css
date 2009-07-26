@@ -5,7 +5,7 @@ li {margin: 0; padding; 0;}
 .rtl {direction: rtl;}
 
 body { 
-	background:url({{ pack.img_background_gradient.get_file }}) repeat-x;
+	background: #8fa2a3 url({{ pack.img_background_gradient.get_file }}) repeat-x;
 }
 
 #header {
