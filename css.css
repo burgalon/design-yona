@@ -12,7 +12,7 @@ body {
 	height: 100px;
 }
 
-.logo { 
+.logo a{ 
 	background:url({{ pack.img_logo.get_file }}) no-repeat;
 	display: block;
 	position: absolute;
