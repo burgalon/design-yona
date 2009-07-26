@@ -23,8 +23,9 @@ body {
 
 .logo span {display: none;}
 
-.nav {
+#navigation {
 	float: left;
+	width: auto;
 }
 
 .nav li {
