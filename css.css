@@ -76,6 +76,7 @@ body {
 
 .main_banner {
 	background:url({{ pack.img_main_banner.get_file }}) no-repeat;
+	display: block;
 	text-indent:-9009px;
 	width:950px;
 	height:334px;
