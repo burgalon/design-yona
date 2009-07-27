@@ -75,7 +75,8 @@ body {
 
 #content {
 	background:url({{ pack.img_separator_1.get_file }}) repeat-x;
-	margin-top: 10px;
+	padding-top: 6px;
+	margin-top: 7px;
 }
 
 .main_banner {
