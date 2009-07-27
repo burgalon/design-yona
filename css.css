@@ -68,9 +68,8 @@ body {
 }
 
 .separator_1 {
-	background:url({{ pack.img_separator_1.get_file }}) no-repeat;
+	background:url({{ pack.img_separator_1.get_file }}) repeat-x;
 	display: block;
-	width:1px;
 	height:6px;
 }
 
@@ -83,9 +82,8 @@ body {
 }
 
 .separator_2 {
-	background:url({{ pack.img_separator_2.get_file }}) no-repeat;
+	background:url({{ pack.img_separator_2.get_file }}) repeat-x;
 	display: block;
-	width:1px;
 	height:8px;
 }
 
