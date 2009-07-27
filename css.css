@@ -73,6 +73,11 @@ body {
 	height:6px;
 }
 
+#content {
+	background:url({{ pack.img_separator_1.get_file }}) repeat-x;
+	margin-top: 10px;
+}
+
 .main_banner {
 	background:url({{ pack.img_main_banner.get_file }}) no-repeat;
 	display: block;
