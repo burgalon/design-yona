@@ -31,10 +31,8 @@ body {
 	float: right;
 }
 .nav a {
-	text-indent:-9009px;
 	display: block;
-	padding-right: 1px;
-	color: black;
+	margin-right: 1px;
 }
 
 .nav .n_5 { 
