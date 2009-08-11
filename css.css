@@ -35,6 +35,8 @@ body {
 	margin-right: 1px;
 	height: 15px;
 	padding: 0 8px;
+	text-decoration: none;
+	color: black;
 }
 
 .nav .n_5 { 
