@@ -33,36 +33,28 @@ body {
 .nav a {
 	display: block;
 	margin-right: 1px;
+	height: 15px;
+	padding: 0 8px;
 }
 
 .nav .n_5 { 
 	background:#fb86b2;
-	width:50px;
-	height:15px;
 }
 
 .nav .n_4 { 
 	background:#bb7dca;
-	width:53px;
-	height:15px;
 }
 
 .nav .n_3 { 
 	background:#51afd1;
-	width:86px;
-	height:15px;
 }
 
 .nav .n_2 { 
 	background:#bad433;
-	width:38px;
-	height:15px;
 }
 
 .nav .n_1 {
 	background:#f8b920;
-	width:63px;
-	height:15px;
 }
 
 .separator_1 {
