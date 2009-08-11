@@ -31,12 +31,15 @@ body {
 	float: right;
 }
 .nav a {
-	display: block;
-	margin-right: 1px;
-	height: 15px;
-	padding: 0 8px;
-	text-decoration: none;
-	color: black;
+	color:black;
+	display:block;
+	font-size:12px;
+	font-weight:bolder;
+	height:15px;
+	line-height:14px;
+	margin-right:1px;
+	padding:0 8px;
+	text-decoration:none;
 }
 
 .nav .n_5 { 
