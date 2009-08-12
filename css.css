@@ -16,6 +16,7 @@ body {
 	top: 7px;
 	width:231px;
 	height:126px;
+	padding-right:34px;
 }
 
 .logo span {display: none;}
@@ -40,7 +41,7 @@ body {
 	text-decoration:none;
 }
 
-h2 {font-size: 14px; font-weight: bold;}
+h2 {font-size: 14px; font-weight: bold; padding-right: 34px;}
 .t_hcatalog h2, .nav .n_5 {background:#fb86b2;}
 .page_print h2, .nav .n_4 {background:#bb7dca;}
 .t_hcatalog h2, .nav .n_3 {background:#51afd1;}
@@ -95,9 +96,12 @@ h2, .nav .n_1 {background:#f8b920;}
 .catalog li {float: right; width: 50%; padding:13px 0; border-bottom: 3px solid #97a8aa;}
 .catalog a {color:black; font-family:Tahoma; text-decoration:none; float:right;}
 .catalog a img {border: 5px solid #829da3; padding: 2px;}
-a.item-thumb {padding-left: 32px;}
+a.item-thumb {padding-left: 32px;  margin-right: 34px;}
 a.item-title {font-size:14px; font-weight: bold; float: none; display: block; margin-bottom: 13px;}
 a.item-sub-title {float: none;}
+.catalog li.odd {
+	background:url({{ pack.img_vertical_separator.get_file }}) no-repeat;
+}
 
 /************** Item Page **************/
 .item_wrap {
