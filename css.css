@@ -7,9 +7,7 @@ body {
 	background: #8fa2a3 url({{ pack.img_background_gradient.get_file }}) repeat-x;
 }
 
-#header {height: 94px; border-bottom: 2px solid #394040;}
-
-h2 {font-size: 14px; font-weight: bold;}
+#header {height: 94px;}
 
 .logo a{ 
 	background:url({{ pack.img_logo.get_file }}) no-repeat;
@@ -42,6 +40,7 @@ h2 {font-size: 14px; font-weight: bold;}
 	text-decoration:none;
 }
 
+h2 {font-size: 14px; font-weight: bold;}
 .t_hcatalog h2, .nav .n_5 {background:#fb86b2;}
 .page_print h2, .nav .n_4 {background:#bb7dca;}
 .t_hcatalog h2, .nav .n_3 {background:#51afd1;}
@@ -54,11 +53,7 @@ h2, .nav .n_1 {background:#f8b920;}
 	height:6px;
 }
 
-#content {
-	background:url({{ pack.img_separator_1.get_file }}) repeat-x;
-	padding-top: 6px;
-	margin-top: 7px;
-}
+#content {border-top: 2px solid #394040;	padding-top: 6px; margin-top: 7px;}
 
 .main_banner {
 	background:url({{ pack.img_main_banner.get_file }}) no-repeat;
@@ -97,7 +92,7 @@ h2, .nav .n_1 {background:#f8b920;}
 }
 
 /************** Catalog **************/
-.catalog li {float: right; width: 50%;}
+.catalog li {float: right; width: 50%; padding:13px 0; border-bottom: 3px solid #97a8aa;}
 .catalog a {color:black; font-family:Tahoma; text-decoration:none; float:right;}
 .catalog a img {border: 5px solid #829da3; padding: 2px;}
 a.item-thumb {padding-left: 32px;}
