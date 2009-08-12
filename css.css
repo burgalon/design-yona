@@ -14,8 +14,7 @@ h1 {margin: 0; padding:0;}
 	background:url({{ pack.img_logo.get_file }}) no-repeat;
 	display: block;
 	position: absolute;
-	top: 7px;
-	width:231px;
+	width:174px;
 	height:126px;
 	padding-right:34px;
 }
@@ -106,5 +105,6 @@ a.item-sub-title {float: none;}
 
 /************** Item Page **************/
 .item_wrap {
-	height: 500px;
+	height: 411px;
+	width: 730px;
 }
