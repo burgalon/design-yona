@@ -11,11 +11,10 @@ body {
 h1 {margin: 0; padding:0;}
 
 .logo a{ 
-	background:url({{ pack.img_logo.get_file }}) no-repeat;
 	display: block;
 	position: absolute;
 	width:174px;
-	height:126px;
+	height:94px;
 	padding-right:34px;
 }
 
@@ -41,12 +40,13 @@ h1 {margin: 0; padding:0;}
 	text-decoration:none;
 }
 
+.t_hcatalog h2, .nav a {background:#51afd1;}
 h2 {font-size: 14px; font-weight: bold; padding-right: 34px;}
-.t_hcatalog h2, .nav .n_5 {background:#fb86b2;}
+.t_contact h2, .nav .contact {background:#fb86b2;}
 .page_print h2, .nav .n_4 {background:#bb7dca;}
-.t_hcatalog h2, .nav .n_3 {background:#51afd1;}
-.page_about h2, .nav .n_2 {background:#bad433;}
-h2, .nav .n_1 {background:#f8b920;}
+.page_about h2, .nav .about {background:#bad433;}
+h2, .nav .home {background:#f8b920;}
+
 
 .separator_1 {
 	background:url({{ pack.img_separator_1.get_file }}) repeat-x;
@@ -107,4 +107,5 @@ a.item-sub-title {float: none;}
 .item_wrap {
 	height: 411px;
 	width: 730px;
+	margin: 0 auto;
 }

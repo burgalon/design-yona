@@ -1,5 +1,6 @@
 {% extends "site/base.html" %}
 {% block head %}
+	{{ block.super }}
 	{{pack.css.render}}
-  <script type="text/javascript" src="{{MEDIA_URL}}js/swfobject.js"></script>
+	<script type="text/javascript" src="{{MEDIA_URL}}js/swfobject.js"></script>
 {% endblock %}
