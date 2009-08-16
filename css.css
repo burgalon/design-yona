@@ -9,13 +9,14 @@ body {
 
 #header {height: 72px;}
 h1 {margin: 0; padding:0;}
+#footer {text-align: center; color: #333;}
+#footer a {color: black; text-decoration: none; font-weight: bold;}
 
 .logo a{ 
 	display: block;
 	position: absolute;
 	width:174px;
 	height:94px;
-	padding-right:34px;
 }
 
 .logo span {display: none;}
@@ -41,7 +42,7 @@ h1 {margin: 0; padding:0;}
 }
 
 .t_hcatalog h2, .nav a {background:#51afd1;}
-h2 {font-size: 14px; font-weight: bold; padding-right: 34px;}
+h2 {font-size: 14px; font-weight: bold; padding: 0 3px;}
 .t_contact h2, .nav .contact {background:#fb86b2;}
 .page_print h2, .nav .n_4 {background:#bb7dca;}
 .page_about h2, .nav .about {background:#bad433;}
@@ -95,12 +96,12 @@ h2, .nav .home {background:#f8b920;}
 /************** Catalog **************/
 .catalog li {float: right; width: 50%; padding:13px 0; border-bottom: 3px solid #97a8aa;}
 .catalog a {color:black; font-family:Tahoma; text-decoration:none; float:right;}
-.catalog a img {border: 5px solid #829da3; padding: 2px;}
-a.item-thumb {padding-left: 32px;  margin-right: 34px;}
-a.item-title {font-size:14px; font-weight: bold; float: none; display: block; margin-bottom: 13px;}
-a.item-sub-title {float: none;}
+a.item-thumb img {border: 2px solid #fff;}
+a.item-thumb {border: 5px solid #829da3;}
+a.item-title {font-size:14px; font-weight: bold; display: block; margin-bottom: 13px; width: 190px; padding-right: 32px;}
+a.item-sub-title {display: block; width: 190px; padding-right: 32px;}
 .catalog li.odd {
-	background:url({{ pack.img_vertical_separator.get_file }}) no-repeat;
+	background:url({{ pack.img_vertical_separator.get_file }}) no-repeat scroll 10px 0;
 }
 
 /************** Item Page **************/
@@ -108,4 +109,8 @@ a.item-sub-title {float: none;}
 	height: 411px;
 	width: 730px;
 	margin: 0 auto;
+}
+
+.item_nav {
+text-align: center;
 }
