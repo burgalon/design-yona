@@ -43,7 +43,7 @@ h1 {margin: 0; padding:0;}
 
 .t_hcatalog h2, .nav a {background:#51afd1;}
 h2 {font-size: 14px; font-weight: bold; padding: 0 3px;}
-.t_contact h2, .nav .contact {background:#fb86b2;}
+.page_contact h2, .nav .contact {background:#fb86b2;}
 .page_print h2, .nav .n_4 {background:#bb7dca;}
 .page_about h2, .nav .about {background:#bad433;}
 h2, .nav .home {background:#f8b920;}
