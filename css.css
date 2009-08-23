@@ -114,3 +114,14 @@ a.item-sub-title {display: block; width: 190px; padding-right: 32px;}
 .item_nav {
 text-align: center;
 }
+
+
+/************** Contact **************/
+textarea {border: 2px solid #87a3bd;}
+input {border: 1px solid #87a3bd;}
+input.submit {
+    background: #f6387f;
+    padding: 2px 15px;
+    color: white;
+    border: none;
+}
