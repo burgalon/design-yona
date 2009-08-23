@@ -117,7 +117,7 @@ text-align: center;
 
 
 /************** Contact **************/
-textarea {border: 2px solid #87a3bd;}
+textarea {border: 2px solid #87a3bd; }
 input {border: 1px solid #87a3bd;}
 input.submit {
     background: #f6387f;
