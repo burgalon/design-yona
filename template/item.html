@@ -1,4 +1,15 @@
 {% extends "site/item.html" %}
-{% block item_render %}
-	<div width="
+{% block item_description %}
+	{% if item.description %}
+	<div class="item-desc">{{item.description}}</div>
+	{% endif %}
+	<div class="item-tags">
+		{% for t in item.tags_list %}
+			<a href="{{portfolio.url}}tag/{{t}}/">{{t|capfirst}}</a>
+		{% endfor %}
+	</div>
+	<div class="item_nav">
+		<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">&laquo; הזמנה קודמת</a>
+		<a class="item-next" href="{{next_item.url}}" title="{{ next_item.name }}">הזמנה הבאה &raquo;</a>
+	</div>
 {% endblock %}
