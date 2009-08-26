@@ -42,7 +42,7 @@ h1 {margin: 0; padding:0;}
 }
 
 .t_hcatalog h2, .nav a {background:#51afd1;}
-h2 {font-size: 14px; font-weight: bold; padding: 0 3px;}
+h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-height: 14px; margin: 5px 0 18px}
 .page_contact h2, .nav .contact {background:#fb86b2;}
 .page_print h2, .nav .n_4 {background:#bb7dca;}
 .page_about h2, .nav .about {background:#bad433;}
