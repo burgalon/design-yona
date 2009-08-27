@@ -1,20 +1,25 @@
 {% extends pack.template_base.template %}
-{% block head %}
-	{{ block.super }}
-	{{pack.css.render}}
-{% endblock %}
+{% load markup %}
 {% block content %}
 <div class="span-24">
-	<a class="main_banner" href="{{ pages.1.url }}" class="tag_interactive">
-		<p>Welcome to my new portfolio page. Check out my work in the gallery page and recent work.</p>
-	</a>
+		<h2 style="background:none;font-size:62px; text-align: center; padding: 20px;">{{ dic.moto.render }}</h2>
+
+		<div class="span-8">
+			{{ dic.home.render|textile }}
+		</div>
+		<div class="span-8">
+			<a class="main_banner" href="{{ pages.1.url }}" class="tag_interactive">{{ pages.1.name }}</a>
+		</div>	
+		<div class="span-8 last">
+			{{ dic.home_more.render|textile }}
+		</div>
+		
 </div>
 <div class="separator_2 span-24">&nbsp;</div>
-<div class="span-11">
-	<a href="{{ pages.2.url }}" class="tag_interactive">Interactive</a>
+<div class="span-12 tag_wrap first">
+	<a href="{{ pages.2.url }}" class="tag_{{ pages.2.slug_name}}">{{ pages.2.name}}</a>
 </div>
-<div class="vertical_separator span-1">&nbsp;</div>
-<div class="span-11 last">
-	<a href="{{ pages.3.url }}" class="tag_print">Print</a>
+<div class="span-12 tag_wrap last">
+	<a href="{{ pages.3.url }}" class="tag_{{ pages.3.slug_name }}">{{ pages.3.name }}</a>
 </div>
 {% endblock %}

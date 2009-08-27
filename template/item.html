@@ -1,4 +1,5 @@
 {% extends "site/item.html" %}
+{% block bodyClass %}{{ block.super }}{% for t in item.tags_list %}page_{{t}}{% endfor %}{% endblock %}
 {% block item_description %}
 	{% if item.description %}
 	<div class="item-desc">{{item.description}}</div>
@@ -9,7 +10,7 @@
 		{% endfor %}
 	</div>
 	<div class="item_nav">
-		<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">&laquo; джорд чегоъ</a>
-		<a class="item-next" href="{{next_item.url}}" title="{{ next_item.name }}">джорд дбад &raquo;</a>
+		<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">&laquo; Ч”Ч–ЧћЧ Ч” Ч§Ч•Ч“ЧћЧЄ</a>
+		<a class="item-next" href="{{next_item.url}}" title="{{ next_item.name }}">Ч”Ч–ЧћЧ Ч” Ч”Ч‘ЧђЧ” &raquo;</a>
 	</div>
 {% endblock %}
