@@ -49,7 +49,7 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 h2, .nav .home {background:#f8b920;}
 
 .page_home h2 {
-	background:url({{ pack.img_main_banner.get_file }}) no-repeat;
+	background:url({{ pack.img_mainHeadline.get_file }}) no-repeat;
 	display: block;
 	text-indent:-9009px;
 	width:950px;
