@@ -121,7 +121,8 @@ a.item-sub-title {display: block; width: 190px; padding-right: 32px;}
 .item-prev, .item-next {color: black; background: #fff; text-decoration: none; display:block; width: 170px; text-align:center; margin-bottom: 6px; height: 15px;line-height: 15px;}
 /************** Contact **************/
 textarea {border: 2px solid #87a3bd; width: 306px; height: 195px;}
-input {border: 1px solid #87a3bd;}
+label {width: 150px; float: right; text-align: left; padding-left: 10px; height: 17px; line-height: 17px;}
+input {border: 1px solid #87a3bd; height: 17px; width: 148px; margin: 0;}
 input.submit {
     background: #f6387f;
     padding: 2px 15px;
@@ -129,7 +130,6 @@ input.submit {
     border: none;
 	margin: 0 160px 0 0;
 }
-label {width: 150px; float: right; text-align: left; padding-left: 10px;}
 
 .page_contact #content {
 	background:url({{ pack.img_contact_bg.get_file }}) no-repeat scroll 10px 0;	
