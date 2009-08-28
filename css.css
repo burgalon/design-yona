@@ -120,9 +120,9 @@ a.item-sub-title {display: block; width: 190px; padding-right: 32px;}
 .item-meta, .item_nav {padding-top: 22px;}
 .item-prev, .item-next {color: black; background: #fff; text-decoration: none; display:block; width: 170px; text-align:center; margin-bottom: 6px; height: 15px;line-height: 15px;}
 /************** Contact **************/
-textarea {border: 2px solid #87a3bd; width: 306px; height: 195px;}
+textarea {border: 2px solid #87a3bd; width: 310px; height:202px;}
 label {width: 150px; float: right; text-align: left; padding-left: 10px; height: 17px; line-height: 17px;}
-input {border: 1px solid #87a3bd; height: 17px; width: 148px; margin: 0;}
+input.text {border: 1px solid #87a3bd; height: 17px; width: 148px; margin: 0; padding: 0;}
 input.submit {
     background: #f6387f;
     padding: 2px 15px;
@@ -131,7 +131,8 @@ input.submit {
 	margin: 0 160px 0 0;
 }
 form p {padding: 0; margin: 17px 0 0 0;}
+form {padding: 10px 0 0 0;}
 
 .page_contact #content {
-	background:url({{ pack.img_contact_bg.get_file }}) no-repeat scroll 10px 0;	
+	background:url({{ pack.img_contact_bg.get_file }}) no-repeat scroll top right;	
 }
