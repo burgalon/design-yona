@@ -127,5 +127,10 @@ input.submit {
     padding: 2px 15px;
     color: white;
     border: none;
+	margin: 0 160px 0 0;
 }
 label {width: 150px; float: right; text-align: left; padding-left: 10px;}
+
+.page_contact #content {
+	background:url({{ pack.img_contact_bg.get_file }}) no-repeat scroll 10px 0;	
+}
