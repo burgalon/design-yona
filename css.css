@@ -130,6 +130,7 @@ input.submit {
     border: none;
 	margin: 0 160px 0 0;
 }
+form p {padding: 0; margin: 17px 0 0 0;}
 
 .page_contact #content {
 	background:url({{ pack.img_contact_bg.get_file }}) no-repeat scroll 10px 0;	
