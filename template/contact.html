@@ -1,15 +1,13 @@
 {% extends pack.template_base.template %}
-{% block main %}
-
+{% block content %}
+<div class="span-12">
 <h2>{{ page.name }}</h2>
 	{%if form%}
 		<form method="post" action=".">
-			<table>
-				<tr><th><label for="id_name">שם:</label></th><td><input id="id_name" type="text" name="name" maxlength="100" /></td></tr>
-				<tr><th><label for="id_email">דוא"ל:</label></th><td><input id="id_email" type="text" name="email" maxlength="200" /></td></tr>
-				<tr><th><label for="id_body">כמה מילים:</label></th><td><textarea id="id_body" rows="10" cols="40" name="body"></textarea><input type="hidden" name="subject" value="Support" id="id_subject" /></td></tr>
-			</table>
-			<input type="submit" class="submit" value="שלח" />
+			<p><label for="id_name">שם:</label><input id="id_name" type="text" class="text" name="name" maxlength="100" /></p>
+			<p><label for="id_email">דוא"ל:</label><input id="id_email" type="text" class="text" name="email" maxlength="200" /></p>
+			<p><label for="id_body">כמה מילים:</label><textarea id="id_body" rows="10" cols="40" name="body"></textarea><input type="hidden" name="subject" value="Support" id="id_subject" /></p>
+			<p><input type="submit" class="submit" value="שלח" /></p>
 		</form>
 	{%endif%}
 	{% if message %}
@@ -17,4 +15,5 @@
 			{{message|linebreaks}}
 		</div>
 	{% endif %}
+</div>
 {% endblock %}

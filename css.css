@@ -55,10 +55,14 @@ h2, .nav .home {background:#f8b920;}
 	width:950px;
 	height:89px;
 	margin-top: 30px;
+	padding: 0;
 }
+.page_item h3, .page_home h3 {background: #bdc9ca; font-weight: none; padding-right: 10px; margin: 19px 0 6px 0; font-weight: bold; font-size: 12px; height: 15px;}
+.page_home {line-height: 15px}
 
 
-.separator_2 {border-top:2px solid #394040; height:2px;}
+
+.separator_2 {border-top:2px solid #394040; height:2px; margin-top: 30px !important;}
 
 #content {border-top: 2px solid #394040;	padding-top: 6px; margin-top: 7px;}
 
@@ -106,20 +110,17 @@ a.item-sub-title {display: block; width: 190px; padding-right: 32px;}
 }
 
 /************** Item Page **************/
+.page_item h3 {color: #fff; margin: 0;font-weight: normal;}
 .item_wrap {
 	height: 411px;
 	width: 730px;
-	margin: 0 auto;
+	padding-right:120px;
 }
 
-.item_nav {
-text-align: center;
-}
-
-.item-prev, .item-next {color: black; padding: 0 2px; background: #fff; text-decoration: none;}
-
+.item-meta, .item_nav {padding-top: 22px;}
+.item-prev, .item-next {color: black; background: #fff; text-decoration: none; display:block; width: 170px; text-align:center; margin-bottom: 6px; height: 15px;line-height: 15px;}
 /************** Contact **************/
-textarea {border: 2px solid #87a3bd; }
+textarea {border: 2px solid #87a3bd; width: 306px; height: 195px;}
 input {border: 1px solid #87a3bd;}
 input.submit {
     background: #f6387f;
@@ -127,3 +128,4 @@ input.submit {
     color: white;
     border: none;
 }
+label {width: 150px; float: right; text-align: left; padding-left: 10px;}

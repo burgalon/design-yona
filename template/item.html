@@ -1,16 +1,18 @@
 {% extends "site/item.html" %}
-{% block bodyClass %}{{ block.super }}{% for t in item.tags_list %}page_{{t}}{% endfor %}{% endblock %}
+{% load markup %}
+{% block bodyClass %}{{ block.super }}{% for t in item.tags_list %} page_{{t}}{% endfor %}{% endblock %}
 {% block item_description %}
-	{% if item.description %}
-	<div class="item-desc">{{item.description}}</div>
-	{% endif %}
-	<div class="item-tags">
-		{% for t in item.tags_list %}
-			<a href="{{portfolio.url}}tag/{{t}}/">{{t|capfirst}}</a>
-		{% endfor %}
+	<div class="span-14 prepend-3 item-meta">
+		<div class="span-7">
+			<h3>{{item.name|capfirst}}</h3>
+			{{item.sub_title|textile}}
+		</div>
+		<div class="span-7 last">
+			{{item.description|textile}}
+		</div>
 	</div>
-	<div class="item_nav">
-		<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">&laquo; הזמנה קודמת</a>
+	<div class="span-6 item_nav last">
 		<a class="item-next" href="{{next_item.url}}" title="{{ next_item.name }}">הזמנה הבאה &raquo;</a>
+		<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">&laquo; הזמנה קודמת</a>
 	</div>
 {% endblock %}
