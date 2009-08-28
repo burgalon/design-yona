@@ -83,7 +83,7 @@ h2, .nav .home {background:#f8b920;}
 }
 
 .tag_wrap {width: 475px;}
-.tag_wrap.first { 
+.tag_wrap_first { 
 	background:url({{ pack.img_vertical_separator.get_file }}) no-repeat;
 	display: block;
 	height:218px;
