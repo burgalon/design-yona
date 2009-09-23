@@ -1,4 +1,4 @@
-{% extends pack.template_base.template %}
+{% extends pack.base.template %}
 {% block content %}
 <div class="span-12">
 <h2>{{ page.name }}</h2>
@@ -7,7 +7,7 @@
 			<p><label for="id_name">שם:</label><input id="id_name" type="text" class="text" name="name" maxlength="100" /></p>
 			<p><label for="id_email">דוא"ל:</label><input id="id_email" type="text" class="text" name="email" maxlength="200" /></p>
 			<p><label for="id_body">כמה מילים:</label><textarea id="id_body" rows="10" cols="40" name="body"></textarea><input type="hidden" name="subject" value="Support" id="id_subject" /></p>
-			<p><input type="submit" class="submit" value="שלח" /></p>
+			<p><input type="submit" class="submit" value="שלח/י" /></p>
 		</form>
 	{%endif%}
 	{% if message %}

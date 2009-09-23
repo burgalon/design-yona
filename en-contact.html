@@ -1,0 +1,19 @@
+{% extends pack.base.template %}
+{% block content %}
+<div class="span-12">
+<h2>{{ page.name }}</h2>
+	{%if form%}
+		<form method="post" action=".">
+			<p><label for="id_name">Name:</label><input id="id_name" type="text" class="text" name="name" maxlength="100" /></p>
+			<p><label for="id_email">Email:</label><input id="id_email" type="text" class="text" name="email" maxlength="200" /></p>
+			<p><label for="id_body">A few words:</label><textarea id="id_body" rows="10" cols="40" name="body"></textarea><input type="hidden" name="subject" value="Support" id="id_subject" /></p>
+			<p><input type="submit" class="submit" value="Send" /></p>
+		</form>
+	{%endif%}
+	{% if message %}
+		<div class="notice">
+			{{message|linebreaks}}
+		</div>
+	{% endif %}
+</div>
+{% endblock %}

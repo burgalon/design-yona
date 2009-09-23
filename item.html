@@ -1,0 +1,35 @@
+{% extends "site/item.html" %}
+{% load markup %}
+{% load utils %}
+{% block bodyClass %}{{ block.super }}{% for t in item.tags_list %} page_{{t.tag|english}}{% endfor %}{% endblock %}
+{% block item_description %}
+	<div class="item-meta">
+		<div class="span-7">
+			<h3>{{item.name|capfirst}}</h3>
+			{{item.sub_title|textile}}
+		</div>
+		<div class="span-7">
+			{% if  item.description %}
+				{{ item.description|textile }}
+			{% else %}
+				&nbsp;
+			{% endif %}
+		</div>
+		<div class="span-6 item_nav last">
+			<a class="item-next" href="{{next_item.url}}" title="{{ next_item.name }}">
+				{% if dic.rtl %}
+					הזמנה הבאה &raquo;
+				{% else %}
+					Next Invitation &raquo;
+				{% endif %}
+			</a>
+			<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">
+				{% if dic.rtl %}
+					&laquo; הזמנה קודמת
+				{% else %}
+					&laquo; Previous Invitation
+				{% endif %}
+			</a>
+		</div>
+	</div>
+{% endblock %}
