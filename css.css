@@ -75,7 +75,6 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 #content {border-top: 2px solid #394040;	padding-top: 6px; margin-top: 7px;}
 
 .main_banner {
-	background:url({{ pack.main_banner.get_file }}) no-repeat;
 	display: block;
 	text-indent:-9009px;
 	width:309px;
@@ -83,7 +82,6 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 }
 
 .tag_interactive { 
-	background:url({{ pack.tag_interactive.get_file }}) no-repeat;
 	display: block;
 	text-indent:-9009px;
 	/*width:474px;*/
@@ -102,7 +100,6 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 .rtl .tag_wrap_first {background-position: 0;}
 
 .tag_print {
-	background:url({{ pack.tag_print.get_file }}) no-repeat;
 	display: block;
 	text-indent:-9009px;
 	height:218px;
