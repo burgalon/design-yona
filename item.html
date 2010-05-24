@@ -1,16 +1,15 @@
 {% extends "site/item.html" %}
 {% load markup %}
-{% load utils %}
-{% block bodyClass %}{{ block.super }}{% for t in item.tags_list %} page_{{t.tag|english}}{% endfor %}{% endblock %}
+{% block bodyClass %}{{ block.super }} page_{{ page.template }}{% for t in page.pages %} page_{{t.slug_name}}{% endfor %}{% endblock %}
 {% block item_description %}
 	<div class="item-meta">
 		<div class="span-7">
 			<h3>{{item.name|capfirst}}</h3>
-			{{item.sub_title|textile}}
+			{{page.dic.sub_title|textile}}
 		</div>
 		<div class="span-7">
-			{% if  item.description %}
-				{{ item.description|textile }}
+			{% if  page.dic.description %}
+				{{ page.dic.description|textile }}
 			{% else %}
 				&nbsp;
 			{% endif %}

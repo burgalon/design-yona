@@ -5,11 +5,11 @@
 		<h2>{{page.name}}</h2>
 		<ul class="catalog {{ page.tags_string }} horizontal">
 			{% for i in items %}
-				<li class="c{{forloop.counter}} {% cycle 'odd' 'even' %}">
-					<a target="_blank" class="item-thumb new-window" href="{{i.sub_title}}">{{ i.render_thumb }}</a>
-					<a target="_blank" class="item-title new-window" href="{{i.sub_title}}">{{i}}</a>
-					{% if i.sub_title %}
-					<a target="_blank" class="item-sub-title new-window" href="{{i.sub_title}}">{{i.description}}</a>
+				<li class="catalog-item c{{forloop.counter}} {% cycle 'odd' 'even' %}">
+					<a target="_blank" class="item-thumb new-window" href="{{i.dic.sub_title}}">{{ i.render_thumb }}</a>
+					<a target="_blank" class="item-title new-window" href="{{i.dic.sub_title}}">{{i}}</a>
+					{% if i.dic.sub_title %}
+					<a target="_blank" class="item-sub-title new-window" href="{{i.dic.sub_title}}">{{i.description}}</a>
 					{% endif %}
 				</li>
 			{% endfor %}

@@ -11,7 +11,7 @@ body {
 
 #header {height: 51px; margin-top: 20px;}
 h1 {margin: 0; padding:0;}
-#footer {text-align: center; color: #333;}
+#footer {text-align: center; color: #333; direction: ltr;}
 #footer a {color: black; text-decoration: none; font-weight: bold;}
 #footer-powered, #footer-powered a {color: #353535;} 
 
@@ -57,6 +57,7 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 	height:89px;
 	margin-top: 30px;
 	padding: 0;
+	overflow:hidden;
 }
 
 .page_item h3, .page_home h3 {background: #6a8085; font-weight: none; padding-left: 10px; margin: 19px 0 6px 0; font-weight: bold; font-size: 12px; height: 15px;}
@@ -78,6 +79,7 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 	text-indent:-9009px;
 	width:309px;
 	height:144px;
+	overflow:hidden;
 }
 
 .tag_interactive { 
@@ -85,6 +87,7 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 	text-indent:-9009px;
 	/*width:474px;*/
 	height:218px;
+	overflow:hidden;
 }
 
 .tag_wrap {width: 475px;}
@@ -102,6 +105,7 @@ h2 {font-size: 14px; font-weight: bold; padding: 0 3px; height: 15px; line-heigh
 	display: block;
 	text-indent:-9009px;
 	height:218px;
+	overflow:hidden;
 }
 
 /************** Catalog **************/
